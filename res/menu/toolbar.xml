@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <item android:id="@+id/customize"
+            android:title="@string/customize"
+            android:titleCondensed="@string/customizeCondensed"
+            android:onClick="customizeClicked"
+            />
+        <item android:id="@+id/reset"
+            android:title="@string/reset"
+            android:onClick="resetClicked"
+            />
+        <item android:id="@+id/resetPush"
+            android:title="@string/resetP"
+            android:onClick="resetPushups"
+            />
+    <item android:id="@+id/defaultSettings"
+        android:title="@string/defaultSettings"
+        android:onClick="backToDefault"
+        />
+</menu>

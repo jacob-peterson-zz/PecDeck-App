@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jpeterson.pecdeck.workout"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorAccent"
+            android:elevation="4dp">
+
+            <TextView
+                android:id="@+id/titleBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="cursive"
+                android:text="@string/app_name"
+
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+        </android.support.v7.widget.Toolbar>
+
+        <ImageView
+            android:id="@+id/cards"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/white"
+            app:srcCompat="@drawable/back" />
+        <TextView
+            android:id="@+id/totalPushups"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text="@string/total" />
+
+        <TextView
+            android:id="@+id/pushups"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cards"
+            android:layout_above="@id/totalPushups"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="@string/pushups"
+            android:textColor="@color/white"
+            android:textSize="33sp" />
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:layout_below="@+id/my_toolbar"
+            android:layout_above="@id/cards"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
